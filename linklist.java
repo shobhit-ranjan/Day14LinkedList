@@ -8,9 +8,11 @@ public class linklist {
 		node.data = data;
 		node.next = null;
 
-		if (head == null) {
+		if (head == null) 
+{
 			head = node;
-		} else {
+		} else 
+{
 			Node n = head;
 			while (n.next != null) {
 				n = n.next;
