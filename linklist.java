@@ -17,7 +17,7 @@ public class linklist {
 			while (n.next != null) {
 				n = n.next;
 			}
-			n.next = node;
+			 n.next = node;
 
 		}
 	}
