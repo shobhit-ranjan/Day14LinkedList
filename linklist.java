@@ -5,7 +5,7 @@ public class linklist {
 
 	public void insert(int data) {
 		Node node = new Node();
-		node.data = data;
+		node.data = data ;
 		node.next = null;
 
 		if (head == null) {
