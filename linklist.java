@@ -1,4 +1,3 @@
-
 public class linklist {
 
 	Node head;
@@ -8,11 +7,9 @@ public class linklist {
 		node.data = data;
 		node.next = null;
 
-		if (head == null) 
-{
+		if (head == null) {
 			head = node;
-		} else 
-{
+		} else {
 			Node n = head;
 			while (n.next != null) {
 				n = n.next;
@@ -28,17 +25,28 @@ public class linklist {
 			System.out.println(node.data);
 			node = node.next;
 		}
-		System.out.println(node.data) ;
-	}
-                        public void insertAtStart(int data)
-	{
-		Node node = new Node();
-		node.data=data;
-		node.next=head;
-		head=node;
-		
-		
+		System.out.println(node.data);
 	}
 
+	public void insertAtStart(int data) {
+		Node node = new Node();
+		node.data = data;
+		node.next = head;
+		head = node;
+
+	}
+
+	public void insertAt(int index, int data) {
+		Node node = new Node();
+		node.data = data;
+		node.next = null;
+
+		Node n = head;
+		for (int i = 0; i < index - 1; i++) {
+			n = n.next;
+		}
+		node.next = n.next;
+		n.next = node;
+	}
 
 }
