@@ -8,6 +8,7 @@ public class Runner {
 		list.insert (56);
 		list.insert (30);
 		list.insert (70);
+                                  list.insertAtStart(21);
 		
 		
 		list.show();
