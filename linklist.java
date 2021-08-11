@@ -28,7 +28,7 @@ public class linklist {
 			System.out.println(node.data);
 			node = node.next;
 		}
-		System.out.println(node.data);
+		System.out.println(node.data) ;
 	}
 
 }
