@@ -31,4 +31,15 @@ public class linklist {
 		System.out.println(node.data) ;
 	}
 
+              public void insertAtStart(int data){
+	
+		Node node = new Node();
+		node.data=data;
+		node.next=head;
+		head=node;
+		
+		
+	}
+
+
 }
